@@ -1,0 +1,22 @@
+﻿
+
+
+
+
+
+
+@model User
+
+<h1>Signing up is easy!</h1>
+
+<form method="post" asp-controller="Home" asp-action="RegisteredOrFailedToRegisterViews">
+    <div class="form-group">
+        <input class="form-control" type="text" name="UserName" required/>
+    </div>
+    <div class="form-group">
+        <input class="form-control" type="text" name="Password" required/>
+    </div>
+    <div>
+        <input class="form-control" type="submit" />
+    </div>
+</form>
